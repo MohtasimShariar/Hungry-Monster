@@ -36,6 +36,7 @@ nav.main-navigation ul.nav-list {
     list-style: none;
     position: relative;
     text-align: right;
+   
 }
 
 .nav-list li.nav-list-item {
@@ -52,7 +53,7 @@ a.nav-link {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: #404040;
+    color: orangered;
 }
 
 @keyframes FadeIn {
