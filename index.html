@@ -8,39 +8,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
     ">
     <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <div class="container">
-        <div class="meal-wrapper">
+    
+        <!--navbar start -->
+        <header>
+           <nav class="main-navigation">
+              <div class="navbar-header animated fadeInUp">
+                <a class="navbar-brand" href="#">Foodies</a>
+              </div>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-link">items</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-list-item">
+                          <a href="#" class="nav-link">Review</a>
+                    </li>
+                    <li class="nav-list-item">
+                         <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+    
+             </nav>
+        </header>
+        
+       <!--navbar end -->
+       <div class="container">
+         <div class="meal-wrapper">
             <div class="meal-search">
-                <!--header-->
+                <!--search box-->
                 <div class="meal-search-box">
                     <input type="text" class="search-control" placeholder="Here for searching foods..." id="search-input">
                     <button type ="submit" class="search-btn btn" id="search-for-btn">Search</button>
                 </div>
             </div>
             <div class = "meal-result">
-                <h2 class = "title">Your Searching items :</h2>
+                    <h2 class = "title">Your Searching items :</h2>
                 <div id= "meal">
-                    
                 </div>
             </div>
             <div class = "meal-details">
                 <!-- recipe close btn -->
-                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-                    <i class = "fas fa-times"></i>
-                  </button>
+                     <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+                         <i class = "fas fa-times"></i>
+                    </button>
         
                 <!-- meal content -->
-                <div class = "meal-details-content">
+                 <div class = "meal-details-content">
                   
-                </div>
-              </div>
+                 </div>
+              
             </div>
-          </div>
+    </div>
 
-    <script src="api.js">
-        
-    </script>
+
+            <script src="api.js"></script>
 </body>
 </html>
